@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXPEDIA</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2; /* Light gray background */
+        }
+
+        frameset {
+            border: none;
+        }
+    </style>
+</head>
+<frameset rows="30%,11%,*">
+    <frameset cols = "16%,*">
+        <frame name = "top" src = "logo.html" />
+        <frame name = "main" src = "title.html" />      
+    </frameset>
+    <frameset cols="16%,16%,16%,16%,16%,*">
+        <frame name ="1" src = "nav/HOME.HTML"/>
+        <frame name ="2" src = "nav/LOGIN.HTML"/> 
+        <frame name="3" src="nav/REGISTRATION.HTML"/>
+        <frame name="4" src="nav/CATALOGUE.HTML"/>
+        <frame name="5" src="nav/CART.HTML"/>
+        <frame name="6" src="nav/CONTACT.HTML"/>
+    </frameset>
+    <frameset cols="16%,*">
+        <frameset rows="20%,20%,20%,20%">
+            <frame name ="2" src="services/PACKAGES.HTML"/> 
+            <frame name="3" src="services/DESTINATION.HTML"/>
+            <frame name="4" src="services/CARS.HTML"/>
+            <frame name="5" src="services/FLIGHTS.HTML"/>
+        </frameset>
+    <frame src="", name="target">
+    </frameset>
+</frameset>
+<body>
+</body>
+</html>

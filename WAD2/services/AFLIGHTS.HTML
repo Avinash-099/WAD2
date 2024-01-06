@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flights Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9; /* Light gray background */
+            color: #333; /* Dark text color */
+            margin: 0;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #4caf50; /* Green heading color */
+        }
+
+        h3 {
+            color: #2196f3; /* Blue heading color */
+        }
+
+        form {
+            background-color: #fff; /* White form background */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555; /* Gray label color */
+        }
+
+        input[type="text"],
+        input[type="date"],
+        input[type="submit"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #2196f3; /* Blue submit button color */
+            color: #fff; /* White text color */
+            cursor: pointer;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Flights</h2>
+    
+    <h3>Find Your Ideal Flight</h3>
+    
+    <form action="/" method="get">
+        <label for="departure">Departure:</label>
+        <input type="text" id="departure" name="departure" required><br><br>
+        
+        <label for="destination">Destination:</label>
+        <input type="text" id="destination" name="destination" required><br><br>
+        
+        <label for="departure_date">Departure Date:</label>
+        <input type="date" id="departure_date" name="departure_date" required><br><br>
+        
+        <input type="submit" value="Search Flights">
+    </form>
+    
+    <h3>Popular Destinations</h3>
+    <ul>
+        <li>LAS-VEGAS</li>
+        <li>LONDON</li>
+        <li>NEW YORK</li>
+        <!-- Add more popular destinations as needed -->
+    </ul>
+</body>
+</html>
